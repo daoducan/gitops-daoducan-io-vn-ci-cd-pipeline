@@ -4,7 +4,7 @@ metadata:
   name: daoducan-io-vn-website-deployment
   namespace: spring
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: daoducan-io-vn-website
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: daoducan-io-vn-website-container
-          image: daoducan88/daoducan-io-vn-website:1.0.0
+          image: daoducan88/daoducan-io-vn-ci-cd-pipeline:1.0.0
           resources:
             limits:
               memory: "256Mi"
